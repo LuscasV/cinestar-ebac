@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStar</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-2">CineStar</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex"> 
+        <!-- o d-md-flex faz com que os itens do menu fiquem lado a lado(flex) em telas medias(md). e o d-block faz com o que os itens do menu fique um embaixo do outro em celulares -->
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-cinestar" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o CineStar</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#localizacoes" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Localizações</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#sessoes" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Sessões</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-smooth-scroll="true" data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="sobre-o-cinestar">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/slides/cinema1.png" alt="foto do espaço interno ">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/cinema2.jpg" alt="foto cinema 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/cinema 3.png" alt="foto cinema 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/cinema.jpg" class="d-block w-100 rounded" alt="foto do espaço interno do restaurante" >
+                        </div>
+                            <div class="col-md-7 mt-3 mt-md-0">
+                                <h2 class="section-title">Sobre o <span class="text-colored">CineStar</span></h2>
+                                <p>
+                                    No coração da nossa comunidade, ergue-se uma nova estrela no mundo do entretenimento: o Cinestar. Mais do que um simples cinema, é um ponto de encontro para os amantes da sétima arte, um lugar onde as histórias ganham vida na tela grande e as emoções fluem livremente.
+                                </p>
+                                <h3 class="section-title">Sobre <span class="text-colored">o Espaço</span></h3>
+                                <p>Nossas confortáveis poltronas convidam você a se acomodar e mergulhar nas tramas emocionantes, nas aventuras épicas e nas comédias hilariantes que preenchem nosso repertório. Com tecnologia de ponta e uma tela imponente, cada cena é ampliada para oferecer uma imersão total, fazendo com que você se sinta parte da história.</p>
+                                <ul>
+                                    <li>300 lugares</li>
+                                    <li>Poltronas inclináveis</li>
+                                    <li>Ambiente refrescado</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="localizacoes" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center"><span class="text-colored">Localizações</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="https://www.ebc.com.br/sites/_institucional/files/thumbnails/image/brasil_visto_de_cima_-_vitoria_e_vila_velha_tv_brasil_-_divulgacao_4.jpeg" alt="bolo" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-airplane-fill"></i>
+                            Vitória - ES</h3>
+                        <p>Localizado no bairro Vitória · VII, Zona Oeste (São Pedro)  </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://imagens.usp.br/wp-content/uploads/2010/03/saopaulo001.jpg" alt="bolo" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-airplane-fill"></i>
+                            São Paulo - SP </h3>
+                        <p>Localizado na rua Santa Madalena n°13 próximo ao Hospital Paulistano</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://i.pinimg.com/originals/13/5b/d7/135bd7649db83c4f561db0191a11be5d.jpg" alt="bolo" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-airplane-fill"></i>
+                            Copacabana - RJ </h3>
+                        <p>Localizado na rua Barata Ribeiro n°200</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sessoes" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5"><span class="text-colored">Sessões</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#segunda-feira" class=" fw-bold text-start text-colored nav-link active">Segunda-feira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#terca-feira" class=" fw-bold text-start text-colored nav-link">Terça-feira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#quarta-feira" class=" fw-bold text-start text-colored nav-link">Quarta-feira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#quinta-feira" class=" fw-bold text-start text-colored nav-link">Quinta-feira</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sexta-feira" class=" fw-bold text-start text-colored nav-link">Sexta-feira</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="segunda-feira">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>10:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>10:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>13:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>13:00</strong></p>
+                                    </div><div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>17:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>17:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>21:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>21:00</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="terca-feira">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>10:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>10:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>13:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>13:00</strong></p>
+                                    </div><div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>17:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>17:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>21:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>21:00</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="quarta-feira">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>10:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>10:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>13:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>13:00</strong></p>
+                                    </div><div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>17:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>17:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>21:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>21:00</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="quinta-feira">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>10:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>10:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>13:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>13:00</strong></p>
+                                    </div><div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>17:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>17:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>21:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>21:00</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sexta-feira">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>10:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>10:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>13:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>13:00</strong></p>
+                                    </div><div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>17:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>17:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/oppenheimer.jpg" alt="coca cola">
+                                        <h5 class="text-colored fw-bold mt-2">Oppenheimer</h5>
+                                        <p>Sessão às <strong>21:00</strong></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/cardapio/barbie.jpg" alt="suco">
+                                        <h5 class="text-colored fw-bold mt-2">Barbie</h5>
+                                        <p>Sessão às <strong>21:00</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome:</label>
+                                <input type="text"  required class="form-control" id="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu E-mail:</label>
+                                <input type="email" required class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional):</label>
+                                <input type="tel"  required class="form-control" id="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem:</label>
+                                <textarea id="mensagem" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço</h3>
+                            <p>Rua Teste Exemplo n°145, Bairro Bootstrap - Mutum - MG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
